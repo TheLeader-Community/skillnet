@@ -23,7 +23,7 @@ export default function Formation() {
             <div style={{ backgroundImage: `url(${course.img})` }} className="bg-no-repeat bg-cover bg-center h-screen w-full">
                 <div className=" bg-black/60 size-full flex justify-center items-center md:items-end">
                     <div className=" p-2 md:p-10 space-y-5">
-                        <h1 className=" text-3xl md:text-7xl font-bold text-white text-center">{course.title}</h1>
+                        <h1 className=" text-3xl md:text-6xl font-bold text-white text-center">{course.title}</h1>
                         <p className=" text-white text-center md:text-xl mt-2">
                             {course.description}
                         </p>

@@ -1,0 +1,86 @@
+NOM DE LA PLATFORME : SKILLNET
+
+DESCRIPTION:
+
+SKILLNET est une platforme visant à orienter et former aux métiers du numérique
+il à également pour objectif de combler les lacunes dans ce domaine
+skillnet propose un panel de domaines dans du numérique allant de l'informatique de base, 
+developpement web, mobile en passant par l'administration linux, base de donnée jusqu'a  
+explorer des secteurs en pleines essort comme l'ia et la science de donné (data science)
+
+PARTICULARITE:
+
+-inscription (2500)
+-prix mensuel par module (5000)
+-certification à chaque fin de module 
+-exercice à chaque fin séance 
+-projet à chaque fin de session
+-quiz, test, defis, challenges en groupe et en solo
+
+
+MODULES:
+
+-informatique de base (5000)
+-logique et algorithmique (5000)
+-développement web (5000)
+-développement mobile (5000)
+-dévéloppement de bureau (5000)
+-développement cross platform 
+-développement de jeux vidéo 2D/3D (5000)
+-data science (5000)
+-administration linux (5000)
+-administration base de donnée (5000)
+-machine learning & deep learning (5000)
+-scripting et automatisation  (5000)
+-réseau informatique (5000)
+
+
+a) informatique de base:
+    apprentissage de base de l'informatique (l'informatique et l'automatisation), les périphériques, les composants 
+    de l'ordinateur...
+
+b) logique et algorithmique:
+    apprentissage de la méthodologie de programmation, initiation aux langages de programmation (pytohn, javascript, c/c++)
+
+c) développement web [prerequis : (logique et algorithmique) ]:
+    initiation aux langages du web (html, css, js)
+    conception de site web simple mise en pratique du DOM
+    introduction aux framework de développement avancé
+    front end
+       bootstrap tailwindcss react gsap
+    backend 
+        php nodejs
+    full stack 
+        nextjs larvale
+
+d) développement mobile [prerequis : (logique et algorithmique) ]:
+    initiation aux systeme d'exploitation android 
+    prise en main de la librairie react-native
+    prise en main du langage dart
+    introduction au framework de développement mobile (flutter, expo)
+
+e) développement de bureau [prerequis : (logique et algorithmique) ]:
+    initiation à la programmation de bureau sous tkinter & python 
+    mise en pratique avec kivy & python
+
+f) développement de jeux vidéo 2D/3D:
+    apprentissage du langage GDSCRIPT
+    prise en main du logiciel GODOT ENGINE 
+
+g) administration linux:
+    introduction aux systeme linux 
+    commande de base de linux
+
+h) administration base de donnée:
+    introduction SGBDR
+    prise en main du logciel MySQL 
+    apprentissate de SQL 
+
+i) scripting et automatisation:
+    initiation au scripting bash
+    initiation à l'automatisation avec python
+    
+j) machine learning & deep learning:
+    creation de neurones
+    creation de chatbot 
+    integration de LLM 

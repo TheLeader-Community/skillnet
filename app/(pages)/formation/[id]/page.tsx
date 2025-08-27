@@ -22,24 +22,30 @@ export default function Formation() {
             <Header />
             <div style={{ backgroundImage: `url(${course.img})` }} className="bg-no-repeat bg-cover bg-center h-screen w-full">
                 <div className=" bg-black/60 size-full flex justify-center items-center md:items-end">
-                    <div className=" p-2 md:p-10 space-y-5">
+                    <div className=" p-2 md:p-20 space-y-5">
                         <h1 className=" text-3xl md:text-6xl font-bold text-white text-center">{course.title}</h1>
                         <p className=" text-white text-center md:text-xl mt-2">
                             {course.description}
                         </p>
 
                         <div className="md:mx-20  grid grid-cols-3 gap-4 md:grid-cols-3 items-center justify-center  mt-10">
-                            <a href="#apropos" className=" active:bg-blue-500 hover:bg-blue-500 transition-all rounded-box border border-blue-500 p-1 md:py-10 text-white flex flex-col justify-center items-center">
-                                <BookOpen className="size-10  md:size-20 " />
-                                <h3 className=" text-center text-xs md:text-sm">Détails de la formation ?</h3>
-                            </a>
-                            <a href="#sommaire" className=" active:bg-blue-500 hover:bg-blue-500 transition-all rounded-box border border-blue-500 p-1 md:py-10 text-white flex flex-col justify-center items-center">
-                                <ListCollapse className="size-10  md:size-20 " />
-                                <h3 className=" text-center text-xs md:text-sm">Sommaire de la formation</h3>
-                            </a>
-                            <div className=" active:bg-blue-500 hover:bg-blue-500 transition-all rounded-box border border-blue-500 p-1 md:py-10 text-white flex flex-col justify-center items-center">
-                                <LayoutDashboard className="size-10  md:size-20 " />
-                                <h3 className=" text-center text-xs md:text-sm">projet de cette formation</h3>
+                            <div className=" flex flex-col justify-center items-center">
+                                <a href="#apropos" className=" active:bg-blue-500 rounded-full hover:bg-blue-500 transition-all  border border-blue-500 p-1 size-20 md:size-32 text-white flex justify-center items-center">
+                                    <BookOpen className="size-10 " />
+                                </a>
+                                <h3 className=" text-center text-xs md:text-sm text-white">Détails de la formation ?</h3>
+                            </div>
+                            <div className=" flex flex-col justify-center items-center">
+                                <a href="#sommaire" className=" active:bg-blue-500 rounded-full hover:bg-blue-500 transition-all  border border-blue-500 p-1 size-20 md:size-32 text-white flex justify-center items-center">
+                                    <ListCollapse className="size-10   " />
+                                </a>
+                                <h3 className=" text-center text-xs md:text-sm text-white">Sommaire de la formation</h3>
+                            </div>
+                            <div className=" flex flex-col justify-center items-center">
+                                <a className=" active:bg-blue-500 rounded-full hover:bg-blue-500 transition-all  border border-blue-500 p-1 size-20 md:size-32 text-white flex justify-center items-center">
+                                    <LayoutDashboard className="size-10  " />
+                                </a>
+                                <h3 className=" text-center text-xs md:text-sm text-white">projet de cette formation</h3>
                             </div>
                         </div>
 
@@ -56,21 +62,21 @@ export default function Formation() {
                         <Logo />
                     </div>
                     <h1 className="text-4xl md:text-5xl ps-1 font-bold">Ce que vous apprendrez</h1>
-                    <p className=" mt-5 text-zinc-700">
-                        Skillnet est une plateforme visant à orienter et former aux métiers du numérique.
-                        Elle a pour objectif de combler les lacunes dans ce domaine en proposant un large éventail
-                        de domaines allant de l&lsquo;informatique de base, au développement web et mobile, à
-                    </p>
-                    <section className=" mt-3">
-                        <div className=" flex flex-wrap gap-2">
-                            <h2 className=" text-xs rounded-full p-2 px-5 bg-black w-fit my-3 text-white font-bold flex items-center gap-2"> <Clock /> {course.duree} mois </h2>
-                            <h2 className=" text-xs rounded-full p-2 px-5 bg-black w-fit my-3 text-white font-bold flex items-center gap-2"> <Clock /> 5000 FCFA/mo </h2>
-                        </div>
+                    <div className=" mt-5 text-zinc-700">
+                        {
+                            course.ceQueVousApprendrez?.map((item, index) => (
+                                <li key={index} className=" mb-2"> {item} </li>
+                            ))
+                        }
+                    </div>
+                    <section className=" mt-5">
                         <h2 className=" text-2xl font-bold flex items-center gap-2 m-2"> <ClipboardList />  Prérequis </h2>
                         <div className=" py-2 flex flex-wrap gap-3">
-                            <div className=" p-1 px-5 rounded-full border border-blue-500 w-fit">Logique et algorithmie</div>
-                            <div className=" p-1 px-5 rounded-full border border-blue-500 w-fit">web</div>
-                            <div className=" p-1 px-5 rounded-full border border-blue-500 w-fit">Programmation</div>
+                            {
+                                course.prerequis?.map((item, index) => (
+                                    <div key={index} className=" p-1 px-5 rounded-full border border-blue-500 w-fit">{item}</div>
+                                ))
+                            }
                         </div>
                     </section>
 
@@ -90,6 +96,18 @@ export default function Formation() {
                         <Logo />
                     </div>
                     <h1 className="text-4xl md:text-5xl ps-1 font-bold">Aux sommaires</h1>
+                    <section>
+                        <div className=" mt-5">
+                            {
+                                course.sommaire?.map((item, index) => (
+                                    <div key={index} className=" mb-3 p-3 border border-zinc-200 rounded-box hover:shadow-lg transition-all">
+                                        <h2 className=" font-bold text-lg"> {item} </h2>
+                                        {/* <p className=" text-zinc-700 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p> */}
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>

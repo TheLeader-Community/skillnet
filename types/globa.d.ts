@@ -7,7 +7,11 @@ declare global {
     createdAt?: string,
     duree?: string,
     nonDisponible?: boolean,
-    categorie?: string
+    categorie?: string,
+    sommaire?: string[],
+    ceQueVousApprendrez?:string[],
+    prerequis?:string[],
+    publicCible?:string,
   }
 }
 

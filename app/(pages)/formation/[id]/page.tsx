@@ -5,7 +5,7 @@ import Header from "@/app/components/ui/Header"
 import Logo from "@/app/components/ui/Logo"
 import { courses } from "@/app/data/courses"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, BookOpen, ClipboardList, Clock, LayoutDashboard, ListCollapse, Users, FolderOpen } from "lucide-react"
+import { ArrowDown, BookOpen, Clock, LayoutDashboard, ListCollapse, Users, FolderOpen } from "lucide-react"
 import Image from "next/image"
 import { useParams } from "next/navigation"
 

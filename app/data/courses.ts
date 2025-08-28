@@ -46,7 +46,7 @@ export const courses: Course[] = [
             "Gérer et manipuler des bases de données.",
             "Déployer des applications sur un serveur."
         ],
-        prerequis: ["Notions de base en programmation"],
+        prerequis: ["Programmation, Logique & Algorithmie", "Bases de Données"],
         publicCible: "Développeurs débutants et étudiants souhaitant devenir Full Stack."
     },
     {
@@ -70,7 +70,7 @@ export const courses: Course[] = [
             "Résoudre les problèmes de connectivité.",
             "Comprendre les bases de la sécurité réseau."
         ],
-        prerequis: ["Notions d'informatique générale"],
+        prerequis: ["Informatique Générale"],
         publicCible: "Étudiants en IT, techniciens de support et administrateurs débutants."
     },
     {
@@ -94,7 +94,7 @@ export const courses: Course[] = [
             "Programmer les mécaniques de jeu (mouvements, collisions).",
             "Publier vos jeux sur les plateformes cibles."
         ],
-        prerequis: ["Notions de base en programmation"],
+        prerequis: ["Programmation, Logique & Algorithmie"],
         publicCible: "Passionnés de jeux vidéo et développeurs créatifs."
     },
     {
@@ -118,7 +118,7 @@ export const courses: Course[] = [
             "Installer des logiciels et maintenir le système.",
             "Automatiser des tâches répétitives."
         ],
-        prerequis: ["Connaissances informatiques de base"],
+        prerequis: ["Informatique Générale"],
         publicCible: "Étudiants en informatique et futurs administrateurs système."
     },
     {
@@ -142,7 +142,7 @@ export const courses: Course[] = [
             "Manipuler des réseaux de neurones simples.",
             "Développer des applications d'IA pratiques avec Python."
         ],
-        prerequis: ["Bonnes bases en Python et en mathématiques"],
+        prerequis: ["Programmation, Logique & Algorithmie", "Bases de Données"],
         publicCible: "Développeurs, data scientists débutants et étudiants."
     },
     {
@@ -166,7 +166,7 @@ export const courses: Course[] = [
             "Gérer les interactions avec les APIs et les bases de données.",
             "Publier vos applications sur les stores."
         ],
-        prerequis: ["Notions de programmation et de logique"],
+        prerequis: ["Programmation, Logique & Algorithmie"],
         publicCible: "Développeurs souhaitant créer des applications multiplateformes."
     },
     {
@@ -190,7 +190,7 @@ export const courses: Course[] = [
             "Assurer la cohérence et l'intégrité de vos données.",
             "Comprendre la différence entre SQL et NoSQL."
         ],
-        prerequis: ["Connaissances de base en informatique"],
+        prerequis: ["Informatique Générale"],
         publicCible: "Développeurs, administrateurs et analystes de données."
     },
     {
@@ -214,7 +214,7 @@ export const courses: Course[] = [
             "Gérer les fichiers, les dossiers et les processus.",
             "Créer des scripts de déploiement simples."
         ],
-        prerequis: ["Bonne maîtrise des systèmes d'exploitation Windows et/ou Linux."],
+        prerequis: ["Administration Système Linux"],
         publicCible: "Administrateurs système, développeurs DevOps et techniciens."
     },
     {
@@ -263,7 +263,7 @@ export const courses: Course[] = [
             "Comprendre les principes du chiffrement.",
             "Adopter une posture de sécurité proactive."
         ],
-        prerequis: ["Connaissances avancées en réseaux et systèmes"],
+        prerequis: ["Réseaux Informatiques", "Administration Système Linux"],
         publicCible: "Professionnels de l'IT, développeurs et administrateurs."
     },
     {
@@ -288,7 +288,7 @@ export const courses: Course[] = [
             "Utiliser des outils d'analyse statistique.",
             "Manipuler des données avec Python."
         ],
-        prerequis: ["Bonnes bases en Python et en mathématiques"],
+        prerequis: ["Programmation, Logique & Algorithmie", "Bases de Données"],
         publicCible: "Analystes, étudiants et professionnels curieux de la donnée."
     },
-]
+];
